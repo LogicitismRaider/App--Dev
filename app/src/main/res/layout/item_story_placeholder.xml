@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/story_image_placeholder"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/profilepicdemo"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.CircleImageView"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/story_username_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Username"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

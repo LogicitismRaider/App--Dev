@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:paddingBottom="8dp">
+
+    <!-- Post Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/post_user_image_placeholder"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/profilepicdemo"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.App.CircleImageView"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/post_username_placeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="username"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"/>
+
+        <ImageView
+            android:id="@+id/post_options_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_more"
+            app:tint="?android:attr/textColorPrimary"
+            android:contentDescription="Post options"/>
+    </LinearLayout>
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/post_image_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:maxHeight="400dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profilepicdemo"
+        android:contentDescription="Post image"/>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/post_like_placeholder"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/homepageic"
+            app:tint="?android:attr/textColorPrimary"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Like"/>
+
+        <ImageView
+            android:id="@+id/post_comment_placeholder"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/stat_notify_chat"
+            app:tint="?android:attr/textColorPrimary"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Comment"/>
+
+        <ImageView
+            android:id="@+id/post_send_placeholder"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="?android:attr/textColorPrimary"
+            android:contentDescription="Send"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/post_bookmark_placeholder"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_save"
+            app:tint="?android:attr/textColorPrimary"
+            android:contentDescription="Bookmark"/>
+    </LinearLayout>
+
+    <!-- Likes Count -->
+    <TextView
+        android:id="@+id/post_likes_count_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="100 likes"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <!-- Caption -->
+    <TextView
+        android:id="@+id/post_caption_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:text="username This is a sample caption for the post."
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <!-- View Comments -->
+    <TextView
+        android:id="@+id/post_view_comments_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:text="View all comments"
+        android:textColor="?android:attr/textColorSecondary"/>
+
+</LinearLayout>
